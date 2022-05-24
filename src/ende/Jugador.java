@@ -3,17 +3,18 @@ package ende;
 /**
  *
  */
-class Jugador{
+class Jugador
+{
 
     int exitos;      // número de partidas ganadas
     int winTotal;
+
     /**
      * Escoge piedra, papel o tijera al azar
      */
-    public String opcionAlAzar ()
-    {
-        String opcion="";
-        int c = (int)(Math.random()*3);
+    public String opcionAlAzar () {
+        String opcion = "";
+        int c = (int) (Math.random() * 3);
         switch (c) {
             case 0 -> opcion = ("piedra");
             case 1 -> opcion = ("papel");
@@ -21,12 +22,12 @@ class Jugador{
         }
         return opcion;
     }
-    public void setExitos ()
-    {
+
+    public void setExitos() {
         exitos++;
     }
-    public int getExitos ()
-    {
-        return(exitos);
+
+    public int getExitos() {
+        return (exitos);
     }
 }
